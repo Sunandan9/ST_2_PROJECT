@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login or Register </title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+   background-image:url('login.png');
+}
+</style>
+</head>
+<body>
+  
+ <div class="login-page"> 
+ <div class="form">
+      <form> 
+   <input type="text" placeholder="Restaurant Name" required>
+   <input type="text" placeholder="Item Name" required>
+   <input type="number" name="Number" placeholder="Price" required>
+	<input type="text" placeholder="Item Type:- Drinks/Lunch/Dinner" required>
+   <input type="text" placeholder="Veg/Non-Veg" required>
+   <button>Add Item</button><br>
+   </form>
+    
+
+ </div>
+ </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'> </script>
+ 
+ <script>
+ $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+ 
+ </script>
+</body>
+</html>
+ 

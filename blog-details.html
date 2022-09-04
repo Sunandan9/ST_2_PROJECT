@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login or Register </title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+   background-image:url('login.png');
+}
+</style>
+</head>
+<body>
+  
+ <div class="login-page"> 
+ <div class="form">
+      <form> 
+   <input type="text" placeholder="Restaurant Name" required>
+   <input type="password" id="p" placeholder="Password" required>
+   <input type="password" id="confirm_p"placeholder="Confirm password" onblur="confirmPass" required>
+   <script type="text/javascript">
+        function confirmPass(){
+		var pass=document.getElementById("p").value;
+		var Cpass=document.getElementById("confirm_p").value;
+		if(pass!=Cpass)
+		    alert('Wrong confirm password');
+		}
+   </script>
+   <input type="Email" placeholder="Email ID" required>
+   <input type="number" name="Number" placeholder="Mobile Number" maxlength="10">
+   <input type="text" placeholder="Veg/Non-Veg" required>
+   <button>Create</button><br>
+   </form>
+    
+
+ </div>
+ </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'> </script>
+ 
+ <script>
+ $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+ 
+ </script>
+</body>
+</html>
+ 
